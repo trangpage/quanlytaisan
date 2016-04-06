@@ -23,8 +23,6 @@
 	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
-<!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
 <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
 <!-- iCheck -->
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
@@ -35,13 +33,13 @@
 		<div id="header">
 			<nav class="navbar navbar-inverse">
 				<div class="container">
-					<h3>Phần mềm quản lý kho</h3>
+					<h3>Phần mềm quản lý tài sản</h3>
 				</div>
 			</nav>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h1 class="panel-title">Trang chủ quản lý kho</h1>
+				<h1 class="panel-title">Trang chủ quản lý tài sản</h1>
 			</div>
 			<div class="panel-body">
 				<div class="row textsize  ">
@@ -50,44 +48,45 @@
 							<span class="glyphicon glyphicon-edit">
 							</span>
 						</p>
-						<p>Tạo đề xuất</p>
+						<a href="dexuat/DeXuatMua.html" ><p>Tạo đề xuất</p></a>
 					</div>
 					<div class="col-md-3  ht">
 						<p class="text-center maupheduyet">
-							<span class="glyphicon  glyphicon-pencil"></span>
+							<span class="glyphicon  glyphicon-pencil" onclick="hide()"></span>
 						</p>
-						<p>Phê duyệt</p>
+						
+						<a href="pheduyet/pheduyetmua.html" ><p>Phê duyệt</p></a>
 					</div>
 					<div class="col-md-3 ht ">
 						<p class="text-center maukho">
 							<span class="glyphicon  glyphicon-equalizer"></span>
 						</p>
-						<p>Kho</p>
+						<a href="kho/nhapkhothuong.html" ><p>Kho</p></a>
 					</div>
 					<div class="col-md-3 ht">
 						<p class="text-center maukiemke">
 							<span class="glyphicon glyphicon-check"></span>
 						</p>
-						<p>Kiểm kê</p>
+						<a href="kiemke/kiemketay.html" ><p>Kiểm kê</p></a>
 					</div>
 					<div class="row textsize ht  ">
 						<div class="col-md-3  ht">
 							<p class="text-center mauthongke">
 								<span class="glyphicon glyphicon-stats"></span>
 							</p>
-							<p>Thống kê</p>
+							<a href="thongke/thongke.html" ><p>Thống kê</p></a>
 						</div>
 						<div class="col-md-3  ht">
 							<p class="text-center danhmuc">
 								<span class="glyphicon glyphicon-edit"></span>
 							</p>
-							<p>Danh mục</p>
+							<a href="danhmuc/danhmuctaisan.html" ><p>Danh mục</p></a>
 						</div>
 						<div class="col-md-3  ht">
 							<p class="text-center taikhoan">
 								<span class="glyphicon glyphicon-user"></span>
 							</p>
-							<p>Tài khoản</p>
+							<a href="canhan/taikhoan.html" ><p>Tài khoản</p></a>
 						</div>
 						
 					</div>
@@ -97,9 +96,16 @@
 
 	</div>
 	
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/jquery.min.js"></script>
-	<script src="../js/main.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/main.js"></script>
 	
+<script>
+$(document).ready(function(){
+     $('span').click(function(){
+           $(this).hide();
+     }
+}
+	</script>
 </body>
 </html>
