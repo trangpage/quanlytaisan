@@ -131,3 +131,9 @@ calltoAction .jumbotron {
 	background-color: #27ae60;
 	text-color:white;
 }
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
